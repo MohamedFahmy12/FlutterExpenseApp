@@ -4,6 +4,7 @@ import 'package:repitition_time/widgets/expenses/data/expenses_data.dart';
 import 'package:repitition_time/widgets/expenses/expenses_list/expenses_list.dart';
 import 'package:repitition_time/widgets/expenses/models/expense.dart';
 
+
 class Expenses extends StatefulWidget {
   const Expenses({super.key});
 
@@ -41,7 +42,10 @@ class _ExpensesState extends State<Expenses> {
       ),
       body: Column(
         children: [
-          ExpensesList(expensesList: expenses,onRemoveExpense: (expense) => expenses.remove(expense),)
+          ExpensesList(
+            expensesList: expenses,
+            onRemoveExpense: (expense) => expenses.remove(expense),
+          )
         ],
       ),
     );

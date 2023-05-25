@@ -141,7 +141,7 @@ class _NewExpense extends State<NewExpense> {
                 child: const Text("Save Expense"),
               ),
               const Spacer(),
-              ElevatedButton(
+              TextButton(
                 onPressed: () {
                   Navigator.pop(context);
                 },

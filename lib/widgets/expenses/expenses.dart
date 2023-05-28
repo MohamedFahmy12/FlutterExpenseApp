@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:repitition_time/widgets/chart/chart.dart';
 import 'package:repitition_time/widgets/expenses/create_expense/create_expense.dart';
 import 'package:repitition_time/widgets/expenses/data/expenses_data.dart';
 import 'package:repitition_time/widgets/expenses/expenses_list/expenses_list.dart';
@@ -42,6 +43,7 @@ class _ExpensesState extends State<Expenses> {
       ),
       body: Column(
         children: [
+          Chart(expenses: expenses),
           ExpensesList(
             expensesList: expenses,
             onRemoveExpense: (expense) => expenses.remove(expense),
